@@ -4,13 +4,14 @@ import './HomeScreen.css';
 import Nav from '../Nav';
 import Row from '../Row';
 import requests from '../Requests';
+import Recommend from './Recommend';
 function HomeScreen() {
     return (
         <div className='homeScreen'> 
              <Nav/>
 
              <Banner/>
-
+            <Recommend />
              <Row 
                 title='NETFLIX ORIGINALS'
                 fetchUrl={requests.fetchNetflixOriginals}
